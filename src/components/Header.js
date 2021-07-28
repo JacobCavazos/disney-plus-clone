@@ -1,32 +1,45 @@
 import styled from 'styled-components';
+import { auth, provider } from '../firebase';
 
 const Header = (props) => {
-  return (
-    <Nav>
-      <Logo>
-        <img src='/images/logo.svg' alt=''/>
-      </Logo>
-      <NavMenu>
-        <a href='/home'>
-          <img src='/images/home-icon.svg' alt='' />
-          <span>HOME</span>
-        </a><a href='/home'>
-          <img src='/images/search-icon.svg' alt='' />
-          <span>SEARCH</span>
-        </a><a href='/home'>
-          <img src='/images/watchlist-icon.svg' alt='' />
-          <span>WATCHLIST</span>
-        </a><a href='/home'>
-          <img src='/images/original-icon.svg' alt='' />
-          <span>ORIGINALS</span>
-        </a><a href='/home'>
-          <img src='/images/movie-icon.svg' alt='' />
-          <span>MOVIES</span>
-        </a>
-      </NavMenu>
-      <Login>LOGIN</Login>
-    </Nav>
-  )
+
+  const handleAuth = () => {
+      auth
+        .signInWithPopup(provider)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          alert(error.message);
+        }); 
+  };
+
+    return (
+      <Nav>
+        <Logo>
+          <img src='/images/logo.svg' alt='' />
+        </Logo>
+        <NavMenu>
+          <a href='/home'>
+            <img src='/images/home-icon.svg' alt='' />
+            <span>HOME</span>
+          </a><a href='/home'>
+            <img src='/images/search-icon.svg' alt='' />
+            <span>SEARCH</span>
+          </a><a href='/home'>
+            <img src='/images/watchlist-icon.svg' alt='' />
+            <span>WATCHLIST</span>
+          </a><a href='/home'>
+            <img src='/images/original-icon.svg' alt='' />
+            <span>ORIGINALS</span>
+          </a><a href='/home'>
+            <img src='/images/movie-icon.svg' alt='' />
+            <span>MOVIES</span>
+          </a>
+        </NavMenu>
+        <Login onClick={handleAuth}>LOGIN</Login>
+      </Nav>
+    );
 };
 
 const Nav = styled.nav`
