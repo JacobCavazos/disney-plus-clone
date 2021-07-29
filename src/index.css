@@ -10,7 +10,7 @@ body {
   background-color: #040714;
   color: #f9f9f9;
 
-  font-family: Avenir-Roman, san-serif;
+  font-family: Avenir-Roman, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +32,6 @@ a {
 }
 @media only screen and (max-width: 479px) {
   body {
-    font-size: 14px;
+      font-size: 14px;
   }
 }
