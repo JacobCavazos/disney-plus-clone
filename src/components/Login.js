@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const Login = (props) => {
+const Login = props => {
   return (
     <Container>
       <Content>
@@ -81,7 +81,10 @@ const SignUp = styled.a`
   padding: 16.5px 0;
   border: 1px solid transparent;
   border-radius: 4px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2f1579ca719202d1e92d15472605d71f8001437d
   &:hover {
     background-color: #0483ee;
   }
