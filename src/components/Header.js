@@ -126,10 +126,6 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   display: inline-block;
-<<<<<<< HEAD
-
-=======
->>>>>>> 2f1579ca719202d1e92d15472605d71f8001437d
   img {
     display: block;
     width: 100%;
@@ -147,10 +143,6 @@ const NavMenu = styled.div`
   position: relative;
   margin-right: auto;
   margin-left: 25px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 2f1579ca719202d1e92d15472605d71f8001437d
   a {
     display: flex;
     align-items: center;
@@ -198,10 +190,6 @@ const NavMenu = styled.div`
       }
     }
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 2f1579ca719202d1e92d15472605d71f8001437d
   /* @media (max-width: 768px) {
     display: none;
   } */
@@ -215,10 +203,6 @@ const Login = styled.a`
   border: 1px solid #f9f9f9;
   border-radius: 4px;
   transition: all 0.2s ease 0s;
-<<<<<<< HEAD
-
-=======
->>>>>>> 2f1579ca719202d1e92d15472605d71f8001437d
   &:hover {
     background-color: #f9f9f9;
     color: #000;
