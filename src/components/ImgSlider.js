@@ -72,11 +72,11 @@ const Carousel = styled(Slider)`
   }
 
   .slick-prev {
-    left: -75px;
+    left: -50px;
   }
 
   .slick-next {
-    right: -75px;
+    right: -50px;
   }
 `;
 
@@ -97,6 +97,7 @@ const Wrap = styled.div`
     img {
       width: 100%;
       height: 100%;
+      padding: 0 5px;
     }
 
     &:hover {

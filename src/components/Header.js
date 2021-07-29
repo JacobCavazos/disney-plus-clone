@@ -126,6 +126,7 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   display: inline-block;
+
   img {
     display: block;
     width: 100%;
@@ -143,6 +144,7 @@ const NavMenu = styled.div`
   position: relative;
   margin-right: auto;
   margin-left: 25px;
+
   a {
     display: flex;
     align-items: center;
@@ -190,6 +192,7 @@ const NavMenu = styled.div`
       }
     }
   }
+
   /* @media (max-width: 768px) {
     display: none;
   } */
@@ -203,6 +206,7 @@ const Login = styled.a`
   border: 1px solid #f9f9f9;
   border-radius: 4px;
   transition: all 0.2s ease 0s;
+
   &:hover {
     background-color: #f9f9f9;
     color: #000;
@@ -253,4 +257,3 @@ const SignOut = styled.div`
 `;
 
 export default Header;
-
